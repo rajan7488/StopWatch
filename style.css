@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #6f92a5;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+.parent{
+    background-color: #1183c0;
+    min-width: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 19rem;
+    border-radius: 1rem;
+}
+.parent h3{
+    font-size: 2.5rem;
+    color: white;
+    letter-spacing: 0.4rem;
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+.parent h2{
+    text-align: center;
+    font-size: 3.2rem;
+    margin-bottom: 1.35rem;
+    font-weight: 900;
+}
+.btn-class{
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn-class button{
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+
+    
+}
+.btn-class-1{
+    background-color: rgba(31, 193, 31, 0.841);
+    border-radius: 0.75rem;
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+.btn-class-2{
+    background-color: rgba(0, 255, 153, 0.586);
+    border-radius: 0.75rem;
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+.btn-class-3{
+    background-color:grey;
+    border-radius: 0.75rem;
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+.btn-class-4{
+    background-color:red;
+    border-radius: 0.75rem;
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+.laps {
+    margin-top:1.3rem;
+    display: none;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+table {
+    width: 50%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: lightgray;
+}
+
+
+@media (max-width:600px) {
+    .parent{
+        min-width: 18rem;
+        min-height: 15rem;
+    }
+    .parent h3{
+        font-size: 1.9rem;
+    }
+    .parent h2{
+        font-size: 2rem;
+    }
+    .btn-class button{
+        padding: 0.45rem 0.95rem;
+        font-size: 0.85rem;
+        cursor: pointer;
+    
+        
+    }
+}
