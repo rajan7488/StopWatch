@@ -18,11 +18,13 @@ body{
 
 .parent{
     background-color: #1183c0;
-    min-width: 28rem;
+    min-width: 25rem;
     display: flex;
+    /* padding: 3rem 3rem; */
     flex-direction: column;
     justify-content: center;
-    min-height: 19rem;
+    align-items: center;
+    height: 22rem;
     border-radius: 1rem;
 }
 .parent h3{
@@ -35,7 +37,7 @@ body{
 .parent h2{
     text-align: center;
     font-size: 3.2rem;
-    margin-bottom: 1.35rem;
+    margin-bottom: 2.35rem;
     font-weight: 900;
 }
 .btn-class{
@@ -46,6 +48,7 @@ body{
     padding: 0.5rem 1.5rem;
     font-size: 1rem;
     cursor: pointer;
+    margin-right: 0.65rem;
 
     
 }
@@ -62,6 +65,8 @@ body{
     border: none;
     color: #ffffff;
     font-weight: 500;
+    display: none;
+
 }
 .btn-class-3{
     background-color:grey;
@@ -69,6 +74,7 @@ body{
     border: none;
     color: #ffffff;
     font-weight: 500;
+    display: none;
 }
 .btn-class-4{
     background-color:red;
@@ -76,12 +82,15 @@ body{
     border: none;
     color: #ffffff;
     font-weight: 500;
+    display: none;
+
 }
 .laps {
     margin-top:1.3rem;
     display: none;
     text-align: center;
     margin-bottom: 1.2rem;
+    overflow-y: scroll;
 }
 table {
     width: 50%;

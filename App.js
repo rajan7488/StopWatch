@@ -19,13 +19,21 @@ start.addEventListener('click',(e)=>{
         timer=setInterval(updateTime,10);
         start.innerText='Start';
     }
+    lap.disabled=false;
+    start.style.display='none';
+    stop.style.display='inline';
+    reset.style.display='inline';
+    lap.style.display='inline';
+
 });
 
 // stop button functionality...
 stop.addEventListener('click',()=>{
     running=false;
+    start.style.display='inline';
     start.innerText='Resume';
     clearInterval(timer);
+    lap.disabled=true;
 });
 
 // Reset button functionality...
@@ -37,9 +45,14 @@ reset.addEventListener('click',(e)=>{
     previousLapTime = 0;
     lapCounter = 0;
     document.getElementById('lapTable').innerText='';
-        document.getElementById('lapsContainer').style.display = 'none';
-    
+    document.getElementById('lapsContainer').style.display = 'none';
+    lap.disabled=false;
     stopWatch.innerText='00:00:00:00';
+    start.style.display='inline';
+    stop.style.display='none';
+    reset.style.display='none';
+    lap.style.display='none';
+
 });
 
 // Record Lap functionality...
